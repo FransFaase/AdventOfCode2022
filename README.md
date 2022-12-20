@@ -171,8 +171,10 @@ I spend some hours in the morning and some hours in the
 evening to solve the puzzle.
 See further [Day 20](Day20.md).
 
-I also spend some time on the puzzle of yesterday.
-
+I also spend some time on the puzzle of yesterday and
+succeeded in finding the answer for the second puzzle,
+without using the hints. The program needed a bit more than
+half an hour to finish.
 
 ### Personal stats
 

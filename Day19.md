@@ -371,6 +371,119 @@ The output this produced was:
 0
 ```
 
+I did not submit the answer, because I felt that I cheated.
+
+But on Tuesday, December 20, I decided to see if the program would find an answer when I
+removed the code that is based on the hint. I had figured out myself, that I never need
+more than four ore robots. I also figured out a way to reduce the number of the last
+recursive calls.
+
+```c
+int max_cost;
+
+void search(int minute, int a_ore, int a_clay, int a_obsidian, int a_geode, int a_ore_robot, int a_clay_robot, int a_obsidian_robot, int a_geode_robot)
+{
+    //printf("%*.*ssearch %2d %2d %2d %2d | %2d %2d %2d %2d\n", minute, minute, "", a_ore, a_clay, a_obsidian, a_geode, a_ore_robot, a_clay_robot, a_obsidian_robot, a_geode_robot);
+    if (minute == MINUTES)
+    {
+        if (a_geode > max_geode)
+        {
+            //printf("%d\n", a_geode);
+            max_geode = a_geode;
+        }
+        return;
+    }
+    
+    minute++;
+    int n_ore      = a_ore      + a_ore_robot;
+    int n_clay     = a_clay     + a_clay_robot;
+    int n_obsidian = a_obsidian + a_obsidian_robot;
+    int n_geode    = a_geode    + a_geode_robot;
+    int options = 0;
+    int need = 0;
+
+    if (a_ore_robot < 4)
+    {
+        if (a_ore < cost_ore)
+            need = cost_ore;
+        else
+        {
+            search(minute, 
+                n_ore      - cost_ore, 
+                n_clay, 
+                n_obsidian,
+                n_geode,
+                a_ore_robot + 1, a_clay_robot, a_obsidian_robot, a_geode_robot);
+        }
+    }
+
+    if (a_ore >= cost_clay)
+    {
+        search(minute, 
+            n_ore - cost_clay, 
+            n_clay, 
+            n_obsidian,
+            n_geode,
+            a_ore_robot, a_clay_robot + 1, a_obsidian_robot, a_geode_robot);
+        options++;
+    }
+    else if (cost_clay > need)
+        need = cost_clay;
+        
+    if (a_ore >= cost_obsidian && a_clay >= clay_obsidian)
+    {
+        search(minute,
+            n_ore - cost_obsidian,
+            n_clay - clay_obsidian, 
+            n_obsidian, 
+            n_geode, 
+            a_ore_robot, a_clay_robot, a_obsidian_robot + 1, a_geode_robot);
+        options++;
+    }
+    else if (cost_obsidian > need)
+        need = cost_obsidian;
+
+    if (a_ore >= cost_geode && a_obsidian >= obsidian_geode)
+    {
+        search(minute,
+            n_ore - cost_geode, 
+            n_clay,
+            n_obsidian - obsidian_geode, 
+            n_geode,
+            a_ore_robot, a_clay_robot, a_obsidian_robot, a_geode_robot + 1);
+        options++;
+    }
+    else if (cost_geode > need)
+        need = cost_geode;
+
+    if (a_ore <= need)
+        search(minute,
+            n_ore,
+            n_clay,
+            n_obsidian,
+            n_geode,
+            a_ore_robot, a_clay_robot, a_obsidian_robot, a_geode_robot);
+}
+
+void process()
+{
+    if (nr > 3) return;
+    max_cost = cost_ore;
+    if (cost_clay > max_cost) max_cost = cost_clay;
+    if (cost_obsidian > max_cost) max_cost = cost_obsidian;
+    if (cost_geode > max_cost) max_cost = cost_geode;
+    max_geode = 0;
+    search(0, 0, 0, 0, 0, 1, 0, 0, 0);
+    answer2 *= max_geode;
+    printf("%d %d %d\n", nr, max_geode, answer2);
+}
+
+```
+
+The program required a bit more than half an hour to produce
+the same answer as the earlier version (with some of the hints)
+implemented. The answer was correct.
+
 ### Some standard definitions
 
 ```c
