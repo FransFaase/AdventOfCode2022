@@ -162,8 +162,17 @@ made on the [Day 1](Day19.md) page.
 
 I read [No aggregating inputs](https://www.reddit.com/r/adventofcode/wiki/faqs/copyright/inputs/)
 and decided to remove the input files that I had included in
-this repository simply but pushing a commit without them
-using `push --force`.
+this repository simply by pushing a commit without them
+using `git push --force`.
+
+### Tuesday, December 20, 2022
+
+I spend some hours in the morning and some hours in the
+evening to solve the puzzle.
+See further [Day 20](Day20.md).
+
+I also spend some time on the puzzle of yesterday.
+
 
 ### Personal stats
 
@@ -171,6 +180,7 @@ using `push --force`.
 ```
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+ 20   13:51:48  10724      0   14:26:42  10018      0
  19   18:19:46   8022      0          -      -      -
  18   03:23:09   6803      0   03:58:22   4942      0
  17   10:02:21   8959      0   15:35:22   7304      0
