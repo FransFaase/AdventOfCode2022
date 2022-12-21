@@ -176,14 +176,23 @@ succeeded in finding the answer for the second puzzle,
 without using the hints. The program needed a bit more than
 half an hour to finish.
 
+### Wednesday, December 21, 2022
+
+I read the puzzle description in the morning. I thought about it
+during the day. It was at 18:40 (CET) that I started working
+on writing code to find the answers. I found this relatively
+easy and it also went quite smooth with no nasty bugs.
+See further [Day 21](Day21.md).
+
 ### Personal stats
 
 
 ```
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+ 21   13:25:18  15008      0   14:01:49  12013      0
  20   13:51:48  10724      0   14:26:42  10018      0
- 19   18:19:46   8022      0          -      -      -
+ 19   18:19:46   8022      0       >24h   9361      0
  18   03:23:09   6803      0   03:58:22   4942      0
  17   10:02:21   8959      0   15:35:22   7304      0
  16   17:39:46  12294      0   22:49:18   8957      0

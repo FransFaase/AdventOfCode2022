@@ -511,5 +511,5 @@ int read_int(const char **ref_s)
 
 The command I use to process this markdown file, is:
 ```
-./IParse/software/MarkDownC Day19.md >p.c; gcc -Wall -g p.c -o p && ./p
+../IParse/software/MarkDownC Day19.md >p.c; gcc -Wall -g p.c -o p && ./p
 ```
