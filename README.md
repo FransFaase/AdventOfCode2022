@@ -184,12 +184,21 @@ on writing code to find the answers. I found this relatively
 easy and it also went quite smooth with no nasty bugs.
 See further [Day 21](Day21.md).
 
+### Thursday, December 22, 2022
+
+I was busy during the day and only started working on the
+puzzle in the evening. The second part was a little more
+work.
+See further [Day 22](Day22.md).
+
+
 ### Personal stats
 
 
 ```
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+ 22   15:31:10  11260      0   17:21:38   6025      0
  21   13:25:18  15008      0   14:01:49  12013      0
  20   13:51:48  10724      0   14:26:42  10018      0
  19   18:19:46   8022      0       >24h   9361      0
