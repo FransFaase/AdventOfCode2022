@@ -191,6 +191,11 @@ puzzle in the evening. The second part was a little more
 work.
 See further [Day 22](Day22.md).
 
+### Friday, December 23, 2022
+
+I took my notebook to the office and started during the break.
+In the evening, it took me some time to finish the puzzle.
+See further [Day 23](Day23.md).
 
 ### Personal stats
 
@@ -198,6 +203,7 @@ See further [Day 22](Day22.md).
 ```
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+ 23   16:00:44  10340      0   16:19:17  10095      0
  22   15:31:10  11260      0   17:21:38   6025      0
  21   13:25:18  15008      0   14:01:49  12013      0
  20   13:51:48  10724      0   14:26:42  10018      0

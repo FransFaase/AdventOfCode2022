@@ -221,6 +221,7 @@ void process_walk(const char *w)
             break;
         w++;
     }
+    print_map();
     printf("%d %d %d : %d\n", i+1, j+1, dir, 1000 * (i+1) + 4 * (j+1) + dir); 
 }
 
