@@ -205,12 +205,22 @@ but it was not. Although it still took me an hour to get
 some details straight.
 See further [Day 24](Day24.md).
 
+### Sunday, December 25, 2022
+
+I woke up early and around 6:04 (CET) went downstairs to
+get my laptop. After having read the puzzle text, I began
+to write the code. I only made two small mistakes in the
+print function and did not bother to test with the example
+input. 
+See further [Day 25](Day25.md).
+
 ### Personal stats
 
 
 ```
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+ 25   00:37:42   1665      0   00:38:03   1407      0
  24   07:05:57   5067      0   10:20:54   6054      0
  23   16:00:44  10340      0   16:19:17  10095      0
  22   15:31:10  11260      0   17:21:38   6025      0

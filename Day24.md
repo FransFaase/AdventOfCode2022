@@ -287,11 +287,6 @@ int read_int(const char **ref_s)
         v = 10 * v + **ref_s - '0';
     return s * v;
 }
-//#define W 6
-//#define H 4
-
-//#define INPUT_FN "day24.txt"
-
 ```
 
 
