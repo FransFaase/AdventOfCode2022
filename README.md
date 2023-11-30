@@ -1,6 +1,6 @@
 # Advent Of Code 2022
 
-My effort of the [Advent of Code 2022](https://adventofcode.com) contest
+My effort of the [Advent of Code 2022](https://adventofcode.com/2022) contest
 
 ### Thursday, December 1, 2022
 
